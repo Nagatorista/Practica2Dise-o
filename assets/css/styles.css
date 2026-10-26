@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Gravitas+One&family=Orbitron:wght@400..900&display=swap');
+
+/*Main settings*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171D3E;
+  margin: 0;
+  line-height: 1.4;
+}
+
+section {
+  padding: 3rem 1.25rem;
+}
+
+.title {
+  font-family: 'Gravitas One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*Header and Home*/
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background-image: url('../images/ado-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  cursor: pointer;
+  padding-right: 150px;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.menu li a {
+  font-family: 'Gravitas One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-center {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Gravitas One', cursive;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #E52B43;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+/*Biography*/
+
+.biography-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.biography-img {
+  flex: 0 0 350px;
+}
+
+.biography-img img {
+  width: 50rem;
+  height: auto;
+}
+
+.biography-text {
+  flex: 1;
+}
+
+.biography-text h3 {
+  font-family: 'Gravitas One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+}
+
+.biography-text p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: left;
+}
+
+/*Albums*/
+
+.album-list {
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-list img {
+  border-radius: 20px;
+}
+
+.album-list h3 {
+  font-family: 'Gravitas One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+}
+
+.album-list p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: left;
+}
+
+.album-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.album-new img {
+  width: 50rem;
+  height: auto;
+}
+
+.album-new h3 {
+  padding-right: 225px;
+}
+
+.album-actions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.album-new button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #E52B43;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.album-list p.album-date {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #E52B43;
+  text-align: center;
+  margin: 0;
+}
+
+.album-studio {
+  display: inline-block;
+  flex-direction: column;
+  width: calc(50% - 0.5rem);
+}
+
+.album-studio img {
+  width: 40rem;
+  height: auto;
+}
+
+.album-other {
+  display: inline-block;
+  flex-direction: column;
+  width: calc(33.33% - 0.5rem);
+}
+
+.album-other img {
+  width: 20rem;
+  height: auto;
+}
+
+.album-sale {
+  display: inline-block;
+  flex-direction: column;
+  width: calc(33.33% - 0.5rem);
+}
+
+.album-sale img {
+  width: 10rem;
+  height: auto;
+}
+
+.album-sale-btn {
+  margin: 0 40%;
+  padding: 0.75rem 1.5rem;
+  background-color: #E52B43;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+/*On Tour*/
+
+.ado-fan-event {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background-image: url('../images/tour-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ado-fan-event h3 {
+  font-family: 'Gravitas One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+  padding-top: 2.5rem;
+  padding-left: 600px;
+}
+
+.ado-fan-event p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: left;
+  padding-left: 600px;
+}
+
+.ado-fan-event p.event-date {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #E52B43;
+  text-align: left;
+  margin: 0;
+  padding-left: 600px;
+}
+
+.ado-fan-event button {
+  margin: 0 0 0 600px;
+  padding: 0.75rem 1.5rem;
+  background-color: #E52B43;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+#tour li {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: 2rem;
+}
+
+#tour li img {
+  width: 20rem;
+  height: auto;
+  border-radius: 20px;
+
+}
+
+#tour li h3 {
+  font-family: 'Gravitas One', cursive;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+}
+
+#tour li p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: left;
+}
+
+/*Contact*/
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  gap: 1rem;
+}
+
+#contact input[type="text"],
+#contact input[type="email"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.5rem 5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  background-color: #171D3E;
+  color: #fff;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  text-align: center;
+}
+
+#contact textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  padding: 0.5rem 5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  background-color: #171D3E;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#contact button {
+  padding: 0.75rem 1.5rem;
+  background-color: #E52B43;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  background-color: #202647;
+  padding: 1.25rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-column {
+  flex-flow: column;
+  padding-right: 5rem;
+}
+
+.footer-column p,
+.footer-column a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column a {
+  display: block;
+}
+
+.footer-column img {
+  width: 2.5rem;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.footer-column a.social-media {
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  body {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  section {
+    padding: 5rem 3rem;
+  }
+
+  .logo img {
+    width: 5rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .biography-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .biography-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .biography-text {
+    max-width: 370px;
+  }
+
+  .biography-text h3 {
+    font-size: 1rem;
+  }
+
+  .biography-text p {
+    font-size: 0.75rem;
+  }
+
+  .biography-text iframe {
+    width: 100%;
+    height: auto;
+  }
+}
