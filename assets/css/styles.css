@@ -429,12 +429,16 @@ footer {
 @media (max-width: 640px) {
   body {
     width: 100%;
-    max-width: 400px;
+    max-width: 401px;
     border: 1px red solid;
   }
 
   section {
     padding: 5rem 3rem;
+  }
+
+  img {
+    max-width: 100%;
   }
 
   .title {
@@ -512,9 +516,21 @@ footer {
     font-size: 0.75rem;
   }
 
-  .album-studio {
+  .album-studio,
+  .album-other,
+  .album-sale {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .album-new img,
+  .album-studio img,
+  .album-other img,
+  .album-sale img {
+    width: 100%;
+    height: auto;
   }
 
   .album-studio iframe {
@@ -542,7 +558,9 @@ footer {
   }
 
   .album-sale-btn {
-    margin: 0;
+    margin-left: 75px;
+    margin-right: 0;
+    font-size: 0.75rem;
   }
 
   .ado-fan-event {
